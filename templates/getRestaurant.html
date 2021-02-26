@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get Employee Information</title>
+</head>
+<div style="text-align: center;">
+	<span style="font-family: avenir ;color: black; font-size: large; ">
+
+		<h1 style="color: DodgerBlue">Administration Use</h1>
+
+		<body bgcolor="lightgrey">
+
+			<form action="/fetchdata" autocomplete="on" method="POST">
+
+				<h2 style="color: grey">Enter Restaurant Name</h2>
+
+		  		Restaurent name:<br> <input style="height:25px;font-size:14pt;" type="text" name="name" autofocus size="40"><br><br>
+
+
+		  		<button type="submit" style="background: grey; height: 45px; width: 200px; color: white; ">FETCH INFO</button><br><br>
+
+		  		<button type="submit" formaction="/" style="background: white	; height: 45px; width: 200px; color: black;" method="GET">GO TO UPDATE DATABASE PAGE</button>
+                <button type="submit" formaction="/deleteData" style="background: white	; height: 45px; width: 200px; color: black;" method="GET">DELETE RECORDS</button>
+                <button type="submit" formaction="/showName" style="background: white	; height: 45px; width: 200px; color: black;" method="GET">SHOW DATA</button>
+
+			</form>
+            <form method="get">
+        <div>
+            {{ outp }}
+
+        </div>
+            </form>
+		</body>
+	</span>
+</div>
+</html>

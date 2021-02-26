@@ -1,0 +1,6 @@
+customhost = "foodstorage.cvceiaimlvxi.us-east-2.rds.amazonaws.com"
+customuser = "fsproject"
+custompass = "mypassword"
+customdb = "foodstorage"
+custombucket = "myfoodbucket"
+customregion = "us-east-2"

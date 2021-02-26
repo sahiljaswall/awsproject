@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Donar Information</title>
+</head>
+<div style="text-align: center; background-color:whitesmoke; ">
+	<span style="font-family: avenir; color: black; font-size: medium; ">
+
+		<h1 style="color: DodgerBlue">Food Management Database</h1>
+
+		<body bgcolor="lightgrey">
+
+			<form action="/returnRest" autocomplete="on" method = "POST" enctype="multipart/form-data">
+
+				<button type="submit" formaction="/getRestaurant" style="background: grey; height: 45px; width: 200px; color:white;">GET RESTAURANT INFORMATION</button><br><br>
+
+
+		  		Name:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="name" ><br><br>
+
+		  		E-mail:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="email"><br><br>
+
+		  		Location:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="address"><br><br>
+                Cell Phone:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="cell"><br><br>
+
+
+                <input style="height:25px;font-size:14pt;color:grey;" class="form-check-input" type="checkbox" value="Yes" name="awaste">
+                <input type="hidden" name="awaste" value="No" />
+                <label class="form-check-label" for="flexCheckDefault">
+                    Cooked Waste
+                </label><br><br>
+                <input style="height:25px;font-size:14pt;color:grey;" class="form-check-input" type="checkbox" value="Yes" name="bwaste" checked>
+                <input type="hidden" name="bwaste" value="No" />
+                <label class="form-check-label" for="flexCheckChecked">
+                    Raw Waste
+                </label><br><br>
+
+                <input style="height:25px;font-size:14pt;color:grey;" class="form-check-input" type="checkbox" value="Yes" name="cwaste" checked>
+                <input type="hidden" name="cwaste" value="No" />
+                <label class="form-check-label" for="flexCheckChecked">
+                    Organic Waste
+                </label><br><br>
+                <input class="form-check-input" type="checkbox" value="Yes" name="dwaste" checked>
+                <input type="hidden" name="dwaste" value="No" />
+                <label class="form-check-label" for="flexCheckChecked">
+                    Recyclable Waste
+                </label><br><br>
+                Image: <input type=file name="image_file" style="height:25px;font-size:14pt;color:grey;"> <br><br>
+
+
+<br><br>
+
+
+                Suggestion:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="suggestion"><br><br>
+
+
+
+
+		  		<button type="submit" style="background: grey; height: 45px; width: 200px; color: white;">SUBMIT WASTE</button>
+
+			</form>
+<a href="/about">About Us</a>
+		</body>
+
+	</span>
+</div>
+</html>
